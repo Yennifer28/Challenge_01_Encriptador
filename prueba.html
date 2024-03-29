@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+  <title>Encriptador / Desencriptador</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Workbench', sans-serif; /* Cambia la fuente a Workbench */
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .input-container,
+    .output-container,
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 20px; /* Agrega margen entre los contenedores */
+    }
+
+    textarea {
+      max-width: 100%;
+      width: 300px;
+      height: 150px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      resize: none;
+      margin-top: 10px;
+    }
+
+    select, button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="title">Encriptador / Desencriptador</h2>
+    <div class="input-container">
+      <label class="text" for="inputText">Texto a procesar:</label>
+      <textarea id="inputText" placeholder="Introduce tu texto aquí"></textarea>
+    </div>
+    <select id="mode">
+      <option value="encrypt">Encriptar</option>
+      <option value="decrypt">Desencriptar</option>
+    </select>
+    <div class="button-container">
+      <button id="processButton">Procesar</button>
+      <button id="copyButton">Copiar</button>
+    </div>
+    <div class="output-container">
+      <label class="text" for="outputText">Resultado:</label>
+      <textarea id="outputText" readonly></textarea>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+  <title>Encriptador / Desencriptador</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+  <h2 class="title">Encriptador / Desencriptador</h2>
+    <div class="input-container">
+      <label class="text" for="inputText">Texto a procesar:</label>
+      <br>
+      <textarea id="inputText" placeholder="Introduce tu texto aquí"></textarea>
+    </div>
+  <select id="mode">
+    <option value="encrypt">Encriptar</option>
+    <option value="decrypt">Desencriptar</option>
+  </select>
+  
+  <br>
+  <button id="processButton">Procesar</button>
+  <button id="copyButton">Copiar</button>
+  <br><br>
+  <div class="output-container">
+    <label class="text" for="outputText">Resultado:</label>
+    <br>
+    <textarea id="outputText" readonly></textarea>
+  </div>
+</div>
+  <script src="./js/script.js"></script>
+</body>
+</html>

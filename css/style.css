@@ -1,0 +1,73 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(to bottom right, #107acc, #2898ee, #6bf0f7);
+  }
+
+.container {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .title{
+    text-align: center;
+    font-size: 35px;
+  font-family: "Workbench", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
+  }
+
+  .text{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
+  textarea {
+    width: 700px; /* Establece un ancho para los textarea */
+    height: 150px; /* Establece una altura para los textarea */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #acc6eb;
+    border: 1px solid #ccc;
+    resize: none;
+    margin-top: 10px; /* Agrega margen arriba del textarea */
+  }
+  
+  
+  #mode,
+  #processButton,
+  #copyButton {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #mode {
+    border-radius: 20px; 
+    background-color: #10d3e5;
+    font-family: Arial, sans-serif; 
+    padding: 8px; 
+    width: 240px;
+  }
+
+  /* Estilo para los botones */
+  button {
+    border-radius: 20px; 
+    border-color: rgb(111, 124, 213);
+    background-color:#10d3e5;
+    font-family: Arial, sans-serif; 
+    padding: 8px 24px; 
+    font-size: 16px;
+    margin: 5px; 
+  }
+
+  select, button {
+    margin-top: 10px;
+  }
+
